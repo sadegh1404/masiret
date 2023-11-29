@@ -29,7 +29,7 @@ export default function RouteTable(props){
                 </Tr>
                 </Thead>
                 <Tbody>
-                    {routes.map((x) => {return <RoutRow info={x}/>})}
+                    {routes.map((x) => {return <RoutRow key={x.id} info={x}/>})}
                 </Tbody>
             </Table>
             </TableContainer>
