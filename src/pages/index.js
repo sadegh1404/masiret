@@ -4,10 +4,10 @@ import Footer from "@/components/Footer"
 import Header from "@/components/Header"
 import Hero from "@/components/Hero"
 
-export default function Home() {
+export default function Home(props) {
   return (
     <>
-      <Header />
+      <Header token={props.token}/>
       <Hero/>
       <Features/>
       <Customer/>
